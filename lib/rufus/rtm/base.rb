@@ -94,7 +94,7 @@ module RTM
     milk(:method => 'rtm.timelines.create')['timeline']
   end
 
-  def get(endpoint, hash)
+  def self.get(endpoint, hash)
      query=hash.inject(""){|result, item|
        result+="#{item[0]}=#{CGI.escape(item[1])}&"
      }
