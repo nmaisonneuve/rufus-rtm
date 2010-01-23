@@ -96,7 +96,7 @@ module RTM
 
   def self.get(endpoint, hash)
      query=hash.inject(""){|result, item|
-       result+="#{item[0]}=#{CGI.escape(item[1])}&"
+       result+="#{item[0].to_s}=#{CGI.escape(item[1].to_s)}&"
      }
      url=endpoint+'?'+query[0..query.length-2]
      p url
