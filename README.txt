@@ -1,6 +1,6 @@
 
 = maisonneuve-rtm
-
+  Version modified removing the dependancy of rufus-verbs gem
 
 == getting it
 
