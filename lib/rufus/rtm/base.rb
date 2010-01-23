@@ -81,9 +81,9 @@ module RTM
 
     sign(ps, secret)
 
-    res = get(endpoint, :query => ps)
+    res = get(endpoint,ps)
 
-    JSON.parse(res.body)['rsp']
+    JSON.parse(res)['rsp']
   end
 
   #
