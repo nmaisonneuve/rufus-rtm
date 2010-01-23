@@ -11,7 +11,7 @@ require 'rake/testtask'
 #require 'hanna/rdoctask'
 
 
-gemspec = File.read('rufus-rtm.gemspec')
+gemspec = File.read('maisonneuve-rtm.gemspec')
 eval "gemspec = #{gemspec}"
 
 
@@ -40,7 +40,7 @@ task :change_version do
 
   version = ARGV.pop
   `sedip "s/VERSION = '.*'/VERSION = '#{version}'/" lib/rufus/rtm/base.rb`
-  `sedip "s/s.version = '.*'/s.version = '#{version}'/" rufus-rtm.gemspec`
+  `sedip "s/s.version = '.*'/s.version = '#{version}'/" maisonneuve-rtm.gemspec`
   exit 0 # prevent rake from triggering other tasks
 end
 

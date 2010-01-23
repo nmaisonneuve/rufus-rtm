@@ -1,14 +1,10 @@
 
-= rufus-rtm
+= maisonneuve-rtm
 
 
 == getting it
 
-  sudo gem install -y rufus-rtm
-
-or at
-
-http://rubyforge.org/frs/?group_id=4812
+  sudo gem install -y maisonneuve-rtm
 
 
 == credentials
@@ -114,39 +110,21 @@ Note as well that, there is a 1 second delay before any request to the RTM serve
 * ...
 
 
-= dependencies
-
-The gem 'rufus-verbs' (http://rufus.rubyforge.org/rufus-verbs)
 
 
-== mailing list
 
-On the rufus-ruby list[http://groups.google.com/group/rufus-ruby] :
-
-http://groups.google.com/group/rufus-ruby
-
-
-== issue tracker
-
-http://rubyforge.org/tracker/?atid=18584&group_id=4812&func=browse
 
 
 == source
 
-http://github.com/jmettraux/rufus-rtm
+http://github.com/maisonneuve/rufus-rtm
 
-  git clone git://github.com/jmettraux/rufus-rtm.git
 
 
 == author
-
-John Mettraux, jmettraux@gmail.com 
+ Nicolas Maisonneuve
+version modified from the work of John Mettraux, jmettraux@gmail.com
 http://jmettraux.wordpress.com
-
-
-== the rest of Rufus
-
-http://rufus.rubyforge.org
 
 
 == license
