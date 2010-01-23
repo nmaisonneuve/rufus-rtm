@@ -1,3 +1,6 @@
+# modified version to remove dependancies from rufus-verb gem
+# author: Nicolas Maisonneuve  n.maisonneuve@gmail.com
+
 #--
 # Copyright (c) 2008-2009, John Mettraux, jmettraux@gmail.com
 #
@@ -24,13 +27,9 @@
 
 
 require 'rubygems'
-require 'rufus/verbs'
-
+require 'cgi'
 require 'json'
 require 'md5'
-
-include Rufus::Verbs
-
 
 module Rufus
 module RTM
@@ -93,6 +92,15 @@ module RTM
   def self.get_timeline #:nodoc:
 
     milk(:method => 'rtm.timelines.create')['timeline']
+  end
+
+  def get(endpoint, hash)
+     query=hash.inject(""){|result, item|
+       result+="#{item[0]}=#{CGI.escape(item[1])}&"
+     }
+     url=endpoint+'?'+query[0..query.length-2]
+     p url
+     Net::HTTP.get(URI.parse(url))
   end
 
 end
