@@ -1,6 +1,6 @@
 
 = maisonneuve-rtm
-  Modified version of the rufus-rtm gem, removing the dependancy of rufus-verbs gem
+  Modified version of the rufus-rtm gem, removing the dependency of the "rufus-verbs" gem
 
 == getting it
 
@@ -118,8 +118,6 @@ Note as well that, there is a 1 second delay before any request to the RTM serve
 == source
 
 http://github.com/maisonneuve/rufus-rtm
-
-
 
 == author
  Nicolas Maisonneuve
