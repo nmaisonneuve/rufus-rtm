@@ -206,6 +206,7 @@ module Rufus::RTM
 
       args = {}
       args[:name] = name
+      args[:parse]="1"
       args[:list_id] = list_id if list_id
       args[:timeline] = Rufus::RTM.get_timeline
 
